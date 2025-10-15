@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini E-Learning Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Mini E-Learning Platform</h1>
+
+    <!-- Login Section -->
+    <div id="login-section">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+      <p id="login-error" class="error hidden">Invalid credentials. Try again.</p>
+    </div>
+
+    <!-- Course Section -->
+    <div id="course-section" class="hidden">
+      <h2>Welcome!</h2>
+      <div id="course-list" class="course-list"></div>
+      <div id="course-detail" class="course-detail hidden"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
